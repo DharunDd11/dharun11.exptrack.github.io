@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker!</title>
+    
+    
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="et.css">
+</head>
+<body>
+    <div class="app">
+        <h1>Expense Tracker</h1>
+           <div class="balance-container"> 
+            <h2> Your Balance</h2>
+             <div id="balance">0</div>
+           </div>
+           <div class="cashflow-container">
+            <div class="income-container">
+                <h2>Income</h2>
+                <div id="income"> </div>
+
+            </div>
+            <div class="expense-container">
+                <h2> Expense </h2>
+                <div id="expense">  </div>
+             </div>
+           </div>
+           <div class="transaction-container">
+            <h2> Transaction History</h2>
+             <ul id="transaction">
+                <!-- <li>
+                    Salary
+                    <div>
+                        <span class="income-amt">₹5000</span>
+                          <button>x</button>
+                    </div>
+                </li>
+                <li>
+                    Buy clothes
+                    <div>
+                        <span class="expense-amt">₹2000</span>
+                          <button>x</button>
+                    </div>
+                </li>
+                <li>
+                    Buy mobile
+                    <div>
+                        <span class="expense-amt">₹2000</span>
+                          <button>x</button>
+                    </div>
+                </li> -->
+             </ul>
+           </div>
+           <div class="form-container">
+            <h2> Add new transaction</h2>
+            <form onsubmit="return false">
+                <label for="name">Name</label>
+                <input id="name" type="text">
+                <label for="amount">Amount</label>
+                <input id="amount" type="number">
+                <button id="incomebtn">Add Income</button>
+                <button id="expensebtn">Add Expense</button>
+            </form>
+           </div>
+    </div> 
+
+           <script src="et.js">
+            //  <div>
+            //      <span class="expense-amt">₹2000</span>
+            //               <button>X</button>
+            //         </div>
+
+           </script>
+</body>
+</html>
